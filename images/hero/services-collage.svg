@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-label="N VaulNW services collage with app tiles and mascots">
+  <defs>
+    <linearGradient id="sc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11151D"/>
+      <stop offset="1" stop-color="#0B0E14"/>
+    </linearGradient>
+    <linearGradient id="sc-tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B2233"/>
+      <stop offset="1" stop-color="#0F1320"/>
+    </linearGradient>
+    <linearGradient id="sc-tile-2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1F2740"/>
+      <stop offset="1" stop-color="#121A2E"/>
+    </linearGradient>
+    <linearGradient id="sc-grad-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4D8BFF"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="sc-grad-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26E0C5"/>
+      <stop offset="1" stop-color="#4D8BFF"/>
+    </linearGradient>
+    <linearGradient id="sc-grad-3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB547"/>
+      <stop offset="1" stop-color="#FF6B95"/>
+    </linearGradient>
+    <linearGradient id="sc-chart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26E0C5" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#26E0C5" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sc-glow-1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4D8BFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#4D8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-glow-2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7B5CFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#7B5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-glow-3" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#26E0C5" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#26E0C5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sc-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <!-- Isometric tile symbol factory -->
+    <g id="sc-tile-shape">
+      <!-- 240 wide x 200 tall isometric -->
+      <path d="M0 30 L120 0 L240 30 L240 170 L120 200 L0 170 Z" fill="url(#sc-tile)"/>
+      <path d="M0 30 L120 0 L240 30" fill="rgba(255,255,255,.05)"/>
+      <path d="M0 30 L0 170 L120 200 L120 30 Z" fill="rgba(0,0,0,.25)"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" fill="url(#sc-bg)"/>
+  <ellipse cx="500" cy="260" rx="500" ry="220" fill="url(#sc-glow-1)" opacity=".5"/>
+  <ellipse cx="800" cy="180" rx="280" ry="180" fill="url(#sc-glow-2)" opacity=".4"/>
+  <ellipse cx="200" cy="340" rx="240" ry="160" fill="url(#sc-glow-3)" opacity=".4"/>
+
+  <!-- Grid floor -->
+  <g stroke="rgba(255,255,255,.04)" stroke-width="1">
+    <line x1="0" y1="380" x2="1000" y2="380"/>
+    <line x1="0" y1="410" x2="1000" y2="410"/>
+    <line x1="0" y1="440" x2="1000" y2="440"/>
+  </g>
+
+  <!-- Particles -->
+  <g fill="#E6EAF2">
+    <circle cx="80" cy="80" r="1.4" opacity=".5"/>
+    <circle cx="160" cy="120" r="1" opacity=".4"/>
+    <circle cx="240" cy="60" r="1.2" opacity=".5"/>
+    <circle cx="760" cy="80" r="1.4" opacity=".5"/>
+    <circle cx="860" cy="140" r="1" opacity=".4"/>
+    <circle cx="920" cy="60" r="1.2" opacity=".5"/>
+    <circle cx="60" cy="420" r="1" opacity=".4"/>
+    <circle cx="940" cy="420" r="1" opacity=".4"/>
+  </g>
+
+  <!-- Tile 1: Game (left, back) -->
+  <g transform="translate(120 130)">
+    <g transform="translate(0 0) scale(1)">
+      <use href="#sc-tile-shape"/>
+      <!-- Game content -->
+      <g transform="translate(20 30)">
+        <text font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#E6EAF2">Arcade</text>
+        <text y="20" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#8A93A6">Daily tournament</text>
+        <!-- Score panel -->
+        <rect x="0" y="40" width="200" height="60" rx="10" fill="url(#sc-grad-1)"/>
+        <text x="14" y="64" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700" fill="#fff" opacity=".85">SCORE</text>
+        <text x="14" y="86" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#fff">12,480</text>
+        <circle cx="170" cy="68" r="18" fill="rgba(255,255,255,.2)"/>
+        <text x="170" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">★</text>
+        <!-- Mini game icons row -->
+        <g transform="translate(0 116)">
+          <rect x="0" y="0" width="44" height="34" rx="8" fill="rgba(255,255,255,.06)"/>
+          <path d="M10 17 h4 l3 -8 l4 16 l3 -10 l3 4 h7" fill="none" stroke="#26E0C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="52" y="0" width="44" height="34" rx="8" fill="rgba(255,255,255,.06)"/>
+          <circle cx="74" cy="17" r="9" fill="none" stroke="#FFB547" stroke-width="1.6"/>
+          <line x1="74" y1="11" x2="74" y2="17" stroke="#FFB547" stroke-width="1.6" stroke-linecap="round"/>
+          <line x1="74" y1="17" x2="79" y2="20" stroke="#FFB547" stroke-width="1.6" stroke-linecap="round"/>
+          <rect x="104" y="0" width="44" height="34" rx="8" fill="rgba(255,255,255,.06)"/>
+          <path d="M114 22 l4 -8 l4 4 l4 -6 l4 4 l4 -2" fill="none" stroke="#FF6B95" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="156" y="0" width="44" height="34" rx="8" fill="rgba(255,255,255,.06)"/>
+          <circle cx="178" cy="17" r="6" fill="#7B5CFF" opacity=".6"/>
+          <circle cx="178" cy="17" r="2.6" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tile 2: Tool / Utility (center, front, largest) -->
+  <g transform="translate(380 200)">
+    <!-- Shadow -->
+    <ellipse cx="120" cy="230" rx="140" ry="22" fill="#000" opacity=".4" filter="url(#sc-shadow)"/>
+    <g>
+      <use href="#sc-tile-shape"/>
+      <g transform="translate(20 30)">
+        <text font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#E6EAF2">Productivity</text>
+        <text y="20" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#8A93A6">Smart tools for daily flow</text>
+        <!-- Sliders -->
+        <g transform="translate(0 38)">
+          <rect x="0" y="0" width="200" height="22" rx="11" fill="rgba(255,255,255,.05)"/>
+          <rect x="2" y="2" width="124" height="18" rx="9" fill="url(#sc-grad-1)"/>
+          <circle cx="124" cy="11" r="9" fill="#fff"/>
+          <circle cx="124" cy="11" r="3" fill="#4D8BFF"/>
+
+          <rect x="0" y="30" width="200" height="22" rx="11" fill="rgba(255,255,255,.05)"/>
+          <rect x="2" y="32" width="80" height="18" rx="9" fill="url(#sc-grad-2)"/>
+          <circle cx="80" cy="41" r="9" fill="#fff"/>
+          <circle cx="80" cy="41" r="3" fill="#26E0C5"/>
+
+          <rect x="0" y="60" width="200" height="22" rx="11" fill="rgba(255,255,255,.05)"/>
+          <rect x="2" y="62" width="158" height="18" rx="9" fill="url(#sc-grad-3)"/>
+          <circle cx="158" cy="71" r="9" fill="#fff"/>
+          <circle cx="158" cy="71" r="3" fill="#FFB547"/>
+        </g>
+        <!-- Quick actions -->
+        <g transform="translate(0 138)">
+          <rect x="0" y="0" width="46" height="34" rx="9" fill="rgba(77,139,255,.18)" stroke="rgba(77,139,255,.4)"/>
+          <path d="M23 11 l8 8 l-8 8 M31 19 H15" stroke="#4D8BFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="54" y="0" width="46" height="34" rx="9" fill="rgba(38,224,197,.18)" stroke="rgba(38,224,197,.4)"/>
+          <path d="M77 9 v18 M68 18 h18" stroke="#26E0C5" stroke-width="1.8" stroke-linecap="round"/>
+          <rect x="108" y="0" width="46" height="34" rx="9" fill="rgba(255,181,71,.18)" stroke="rgba(255,181,71,.4)"/>
+          <circle cx="131" cy="18" r="8" fill="none" stroke="#FFB547" stroke-width="1.8"/>
+          <line x1="131" y1="13" x2="131" y2="18" stroke="#FFB547" stroke-width="1.8" stroke-linecap="round"/>
+          <rect x="162" y="0" width="38" height="34" rx="9" fill="rgba(123,92,255,.18)" stroke="rgba(123,92,255,.4)"/>
+          <path d="M181 9 l-8 18 M181 27 l-8 -18" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tile 3: Dashboard / Chart (right, back) -->
+  <g transform="translate(640 120)">
+    <use href="#sc-tile-shape"/>
+    <g transform="translate(20 30)">
+      <text font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#E6EAF2">Dashboard</text>
+      <text y="20" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#8A93A6">Live performance</text>
+      <!-- KPI cards -->
+      <g transform="translate(0 32)">
+        <rect x="0" y="0" width="62" height="46" rx="10" fill="rgba(38,224,197,.14)" stroke="rgba(38,224,197,.3)"/>
+        <text x="10" y="18" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#8A93A6">Revenue</text>
+        <text x="10" y="36" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#26E0C5">$84K</text>
+        <rect x="70" y="0" width="62" height="46" rx="10" fill="rgba(77,139,255,.14)" stroke="rgba(77,139,255,.3)"/>
+        <text x="80" y="18" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#8A93A6">Users</text>
+        <text x="80" y="36" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#4D8BFF">12.4K</text>
+        <rect x="140" y="0" width="60" height="46" rx="10" fill="rgba(255,181,71,.14)" stroke="rgba(255,181,71,.3)"/>
+        <text x="150" y="18" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#8A93A6">Rating</text>
+        <text x="150" y="36" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#FFB547">4.9</text>
+      </g>
+      <!-- Chart -->
+      <g transform="translate(0 92)">
+        <path d="M0 56 L24 42 L48 48 L72 28 L96 32 L120 16 L144 22 L168 8 L192 14" fill="none" stroke="url(#sc-grad-2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M0 56 L24 42 L48 48 L72 28 L96 32 L120 16 L144 22 L168 8 L192 14 L192 64 L0 64 Z" fill="url(#sc-chart)"/>
+        <circle cx="192" cy="14" r="4" fill="#26E0C5"/>
+        <circle cx="192" cy="14" r="9" fill="#26E0C5" opacity=".3"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mascot 1: Bruno the Bear (peek bottom-left) -->
+  <g transform="translate(60 350)">
+    <ellipse cx="50" cy="80" rx="60" ry="10" fill="#000" opacity=".35" filter="url(#sc-shadow)"/>
+    <g transform="translate(0 0) scale(1.4)">
+      <g transform="translate(-32 -32)">
+        <circle cx="13" cy="18" r="7" fill="#8B5A2B"/>
+        <circle cx="13" cy="18" r="3.5" fill="#C9926A"/>
+        <circle cx="51" cy="18" r="7" fill="#8B5A2B"/>
+        <circle cx="51" cy="18" r="3.5" fill="#C9926A"/>
+        <ellipse cx="32" cy="38" rx="22" ry="21" fill="#C9926A"/>
+        <ellipse cx="32" cy="46" rx="13" ry="10" fill="#F2D4B6"/>
+        <ellipse cx="24" cy="34" rx="2.4" ry="2.8" fill="#1A1F2B"/>
+        <ellipse cx="40" cy="34" rx="2.4" ry="2.8" fill="#1A1F2B"/>
+        <circle cx="24.7" cy="33.3" r=".7" fill="#fff"/>
+        <circle cx="40.7" cy="33.3" r=".7" fill="#fff"/>
+        <path d="M19 28 Q24 26 28 29" fill="none" stroke="#5C3A1B" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M45 28 Q40 26 36 29" fill="none" stroke="#5C3A1B" stroke-width="1.4" stroke-linecap="round"/>
+        <ellipse cx="32" cy="42" rx="3" ry="2.2" fill="#1A1F2B"/>
+        <path d="M32 44 L32 48" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M25 48 Q32 53 39 48" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+        <ellipse cx="16" cy="44" rx="3.5" ry="2" fill="#FF8FA8" opacity=".4"/>
+        <ellipse cx="48" cy="44" rx="3.5" ry="2" fill="#FF8FA8" opacity=".4"/>
+      </g>
+    </g>
+    <!-- Thumbs up -->
+    <g transform="translate(50 6) rotate(15)">
+      <rect x="0" y="0" width="8" height="10" rx="3" fill="#8B5A2B"/>
+      <rect x="2" y="-4" width="4" height="6" rx="2" fill="#C9926A"/>
+    </g>
+  </g>
+
+  <!-- Mascot 2: Milo the Cat (peek top-right) -->
+  <g transform="translate(810 80)">
+    <g transform="scale(1.2)">
+      <g transform="translate(-32 -32)">
+        <path d="M12 24 L8 8 L24 20 Z" fill="#C7A983"/>
+        <path d="M52 24 L56 8 L40 20 Z" fill="#C7A983"/>
+        <path d="M14 22 L13 14 L21 20 Z" fill="#FFB6C8"/>
+        <path d="M50 22 L51 14 L43 20 Z" fill="#FFB6C8"/>
+        <ellipse cx="32" cy="38" rx="22" ry="20" fill="#E8D5B0"/>
+        <path d="M16 30 Q18 27 20 30" fill="none" stroke="#8B6F4E" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+        <path d="M48 30 Q46 27 44 30" fill="none" stroke="#8B6F4E" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+        <ellipse cx="16" cy="44" rx="5" ry="3" fill="#FF9EBD" opacity=".7"/>
+        <ellipse cx="48" cy="44" rx="5" ry="3" fill="#FF9EBD" opacity=".7"/>
+        <path d="M20 36 Q24 32 28 36" fill="none" stroke="#1A1F2B" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M36 36 Q40 32 44 36" fill="none" stroke="#1A1F2B" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M30 42 L32 40 L34 42 L32 44 Z" fill="#FF8FA8"/>
+        <path d="M26 46 Q32 51 38 46" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="6" y1="44" x2="18" y2="44" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+        <line x1="58" y1="44" x2="46" y2="44" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mascot 3: Pip the Bunny (peek bottom-right) -->
+  <g transform="translate(820 360)">
+    <g transform="scale(1.3)">
+      <g transform="translate(-32 -32)">
+        <ellipse cx="22" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+        <ellipse cx="42" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+        <ellipse cx="22" cy="16" rx="2" ry="8" fill="#FF9EBD"/>
+        <ellipse cx="42" cy="16" rx="2" ry="8" fill="#FF9EBD"/>
+        <ellipse cx="32" cy="40" rx="21" ry="19" fill="#FFFFFF"/>
+        <ellipse cx="16" cy="44" rx="5" ry="3.5" fill="#FF6B95" opacity=".6"/>
+        <ellipse cx="48" cy="44" rx="5" ry="3.5" fill="#FF6B95" opacity=".6"/>
+        <ellipse cx="24" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+        <ellipse cx="40" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+        <circle cx="24.5" cy="35.2" r=".7" fill="#fff"/>
+        <circle cx="40.5" cy="35.2" r=".7" fill="#fff"/>
+        <path d="M30 42 L32 44 L34 42" fill="none" stroke="#FF6B95" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="32" y1="44" x2="32" y2="47" stroke="#FF6B95" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M30 47 Q32 49 34 47" fill="none" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+    </g>
+    <!-- Flower -->
+    <g transform="translate(40 -10)">
+      <circle r="2" fill="#FFB547"/>
+      <circle cx="-3" cy="-2" r="1.5" fill="#FFB547"/>
+      <circle cx="3" cy="-2" r="1.5" fill="#FFB547"/>
+      <circle cx="-3" cy="2" r="1.5" fill="#FFB547"/>
+      <circle cx="3" cy="2" r="1.5" fill="#FFB547"/>
+      <circle r="1" fill="#FF8FA8"/>
+    </g>
+  </g>
+
+  <!-- Connection lines between tiles -->
+  <g stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="2 4" fill="none">
+    <path d="M250 240 Q300 220 380 250"/>
+    <path d="M620 240 Q650 230 660 220"/>
+  </g>
+</svg>

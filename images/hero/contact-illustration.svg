@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="N VaulNW contact illustration with envelope and mascots">
+  <defs>
+    <radialGradient id="ci-glow-1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4D8BFF" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#4D8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ci-glow-2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7B5CFF" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#7B5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ci-env" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B2233"/>
+      <stop offset="1" stop-color="#0F1320"/>
+    </linearGradient>
+    <linearGradient id="ci-env-flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#222A40"/>
+      <stop offset="1" stop-color="#161D2E"/>
+    </linearGradient>
+    <linearGradient id="ci-letter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF5EC"/>
+      <stop offset="1" stop-color="#F2DCC2"/>
+    </linearGradient>
+    <linearGradient id="ci-plane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4D8BFF"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="ci-grad-2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#26E0C5"/>
+      <stop offset="1" stop-color="#4D8BFF"/>
+    </linearGradient>
+    <filter id="ci-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <symbol id="ci-spark" viewBox="-10 -10 20 20">
+      <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="url(#ci-plane)"/>
+    </symbol>
+    <symbol id="ci-heart" viewBox="-10 -10 20 20">
+      <path d="M0 6 c-5 -4 -9 -8 -9 -12 c0 -3 2.5 -5 5 -5 c1.5 0 3 .7 4 2 c1 -1.3 2.5 -2 4 -2 c2.5 0 5 2 5 5 c0 4 -4 8 -9 12 z" fill="#FF6B95"/>
+    </symbol>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0B0E14"/>
+  <ellipse cx="400" cy="280" rx="500" ry="240" fill="url(#ci-glow-1)"/>
+  <ellipse cx="660" cy="180" rx="220" ry="160" fill="url(#ci-glow-2)"/>
+
+  <!-- Subtle stars -->
+  <g fill="#E6EAF2">
+    <circle cx="80" cy="80" r="1.4" opacity=".6"/>
+    <circle cx="140" cy="160" r="1" opacity=".4"/>
+    <circle cx="60" cy="280" r="1.2" opacity=".5"/>
+    <circle cx="200" cy="60" r="1" opacity=".4"/>
+    <circle cx="700" cy="80" r="1.4" opacity=".6"/>
+    <circle cx="740" cy="180" r="1" opacity=".4"/>
+    <circle cx="660" cy="60" r="1.2" opacity=".5"/>
+    <circle cx="120" cy="420" r="1" opacity=".4"/>
+    <circle cx="700" cy="420" r="1" opacity=".4"/>
+  </g>
+  <use href="#ci-spark" x="120" y="120" width="16" height="16" opacity=".7"/>
+  <use href="#ci-spark" x="660" y="100" width="14" height="14" opacity=".6"/>
+  <use href="#ci-spark" x="60" y="220" width="10" height="10" opacity=".5"/>
+  <use href="#ci-spark" x="720" y="280" width="12" height="12" opacity=".6"/>
+
+  <!-- Paper plane trail (motion lines) -->
+  <g stroke="rgba(77,139,255,.4)" stroke-width="1.4" stroke-linecap="round" fill="none">
+    <path d="M540 200 Q480 180 420 220" stroke-dasharray="3 5"/>
+    <path d="M520 240 Q470 220 410 250" stroke-dasharray="2 5" opacity=".6"/>
+    <path d="M560 260 Q500 250 460 280" stroke-dasharray="2 5" opacity=".4"/>
+  </g>
+
+  <!-- Paper plane (top right) -->
+  <g transform="translate(560 180) rotate(-12)">
+    <ellipse cx="40" cy="50" rx="56" ry="10" fill="#000" opacity=".3" filter="url(#ci-shadow)"/>
+    <path d="M0 20 L100 0 L80 50 Z" fill="url(#ci-plane)"/>
+    <path d="M0 20 L100 0 L60 32 Z" fill="rgba(255,255,255,.18)"/>
+    <path d="M60 32 L80 50 L100 0" fill="rgba(0,0,0,.18)"/>
+    <path d="M60 32 L100 0" stroke="rgba(255,255,255,.4)" stroke-width=".8" fill="none"/>
+  </g>
+
+  <!-- Floating message bubbles -->
+  <g transform="translate(80 100)">
+    <rect x="0" y="0" width="120" height="48" rx="14" fill="#1A2030" stroke="rgba(255,255,255,.08)"/>
+    <circle cx="16" cy="24" r="8" fill="url(#ci-grad-2)"/>
+    <text x="16" y="28" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">N</text>
+    <rect x="32" y="14" width="76" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/>
+    <rect x="32" y="24" width="60" height="4" rx="2" fill="rgba(255,255,255,.3)"/>
+    <rect x="32" y="32" width="68" height="4" rx="2" fill="rgba(255,255,255,.3)"/>
+  </g>
+
+  <g transform="translate(580 360)">
+    <rect x="0" y="0" width="160" height="56" rx="14" fill="#1A2030" stroke="rgba(255,255,255,.08)"/>
+    <use href="#ci-heart" x="20" y="28" width="16" height="16"/>
+    <rect x="44" y="14" width="100" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/>
+    <rect x="44" y="24" width="80" height="4" rx="2" fill="rgba(255,255,255,.3)"/>
+    <rect x="44" y="32" width="64" height="4" rx="2" fill="rgba(255,255,255,.3)"/>
+  </g>
+
+  <!-- Big envelope (center) -->
+  <g transform="translate(180 180)">
+    <!-- Shadow under envelope -->
+    <ellipse cx="220" cy="240" rx="220" ry="22" fill="#000" opacity=".45" filter="url(#ci-shadow)"/>
+    <!-- Back of envelope -->
+    <rect x="0" y="40" width="440" height="200" rx="14" fill="url(#ci-env)" stroke="rgba(255,255,255,.1)"/>
+    <!-- Side lines -->
+    <path d="M0 40 L220 200 L440 40" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+    <!-- Letter coming out (behind front flap) -->
+    <g transform="translate(60 -30)">
+      <rect x="0" y="0" width="320" height="200" rx="6" fill="url(#ci-letter)"/>
+      <!-- Letter header -->
+      <rect x="20" y="24" width="80" height="10" rx="3" fill="#4D8BFF" opacity=".6"/>
+      <rect x="20" y="44" width="280" height="6" rx="3" fill="#1A1F2B" opacity=".55"/>
+      <rect x="20" y="56" width="240" height="6" rx="3" fill="#1A1F2B" opacity=".4"/>
+      <rect x="20" y="68" width="260" height="6" rx="3" fill="#1A1F2B" opacity=".4"/>
+      <rect x="20" y="80" width="220" height="6" rx="3" fill="#1A1F2B" opacity=".4"/>
+      <rect x="20" y="92" width="180" height="6" rx="3" fill="#1A1F2B" opacity=".4"/>
+      <!-- Decorative shapes -->
+      <rect x="20" y="120" width="120" height="50" rx="6" fill="rgba(77,139,255,.18)"/>
+      <rect x="150" y="120" width="80" height="50" rx="6" fill="rgba(38,224,197,.18)"/>
+      <rect x="240" y="120" width="60" height="50" rx="6" fill="rgba(255,181,71,.22)"/>
+      <!-- Signature line -->
+      <path d="M40 188 Q60 184 80 188" fill="none" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="200" y="192" font-family="Inter, system-ui, sans-serif" font-size="8" font-weight="700" fill="#7B5CFF">N VaulNW</text>
+    </g>
+    <!-- Front flap of envelope (open, behind letter) -->
+    <path d="M0 240 L220 130 L440 240 Z" fill="url(#ci-env-flap)" stroke="rgba(255,255,255,.1)" stroke-linejoin="round"/>
+    <!-- Front lower triangle folds -->
+    <path d="M0 40 L0 240 L220 130 Z" fill="rgba(0,0,0,.18)"/>
+    <path d="M440 40 L440 240 L220 130 Z" fill="rgba(0,0,0,.25)"/>
+    <!-- Bottom fold edge -->
+    <line x1="0" y1="240" x2="220" y2="130" stroke="rgba(255,255,255,.06)"/>
+    <line x1="440" y1="240" x2="220" y2="130" stroke="rgba(255,255,255,.06)"/>
+    <!-- Wax seal (front) -->
+    <g transform="translate(220 130)">
+      <circle r="22" fill="#FF6B95"/>
+      <circle r="22" fill="url(#ci-glow-2)" opacity=".5"/>
+      <path d="M-8 -2 L0 -8 L8 -2 L8 6 L0 10 L-8 6 Z" fill="rgba(255,255,255,.4)"/>
+      <text y="4" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff" text-anchor="middle">N</text>
+    </g>
+  </g>
+
+  <!-- Mascot 1: Riku the Raccoon delivering (left of envelope) -->
+  <g transform="translate(80 240)">
+    <g transform="scale(1.5)">
+      <g transform="translate(-32 -32)">
+        <path d="M10 22 L6 8 L22 18 Z" fill="#8E94A0"/>
+        <path d="M54 22 L58 8 L42 18 Z" fill="#8E94A0"/>
+        <path d="M13 20 L11 12 L20 18 Z" fill="#FFB6C8"/>
+        <path d="M51 20 L53 12 L44 18 Z" fill="#FFB6C8"/>
+        <ellipse cx="32" cy="38" rx="22" ry="20" fill="#D7D9DD"/>
+        <path d="M12 32 Q14 24 22 24 L42 24 Q50 24 52 32 Q52 44 32 50 Q12 44 12 32 Z" fill="#4A4F5A" opacity=".75"/>
+        <path d="M22 44 Q32 56 42 44 Q40 52 32 54 Q24 52 22 44 Z" fill="#F2F2F4"/>
+        <rect x="11" y="29" width="18" height="11" rx="3" fill="#1A1F2B"/>
+        <rect x="35" y="29" width="18" height="11" rx="3" fill="#1A1F2B"/>
+        <line x1="29" y1="33" x2="35" y2="33" stroke="#1A1F2B" stroke-width="1.6"/>
+        <ellipse cx="32" cy="46" rx="2.2" ry="1.5" fill="#1A1F2B"/>
+        <path d="M28 50 Q32 53 36 50" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+    </g>
+    <!-- Tiny letter in paw -->
+    <g transform="translate(60 14)">
+      <rect x="0" y="0" width="14" height="10" rx="1" fill="#FFF5EC"/>
+      <line x1="2" y1="3" x2="12" y2="3" stroke="#4D8BFF" stroke-width=".8"/>
+      <line x1="2" y1="6" x2="10" y2="6" stroke="#1A1F2B" stroke-width=".4" opacity=".4"/>
+      <line x1="2" y1="8" x2="8" y2="8" stroke="#1A1F2B" stroke-width=".4" opacity=".4"/>
+    </g>
+  </g>
+
+  <!-- Mascot 2: Pip the Bunny (right of envelope, peeking) -->
+  <g transform="translate(620 260)">
+    <g transform="scale(1.4)">
+      <g transform="translate(-32 -32)">
+        <ellipse cx="22" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+        <ellipse cx="42" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+        <ellipse cx="22" cy="16" rx="2" ry="8" fill="#FF9EBD"/>
+        <ellipse cx="42" cy="16" rx="2" ry="8" fill="#FF9EBD"/>
+        <ellipse cx="32" cy="40" rx="21" ry="19" fill="#FFFFFF"/>
+        <ellipse cx="16" cy="44" rx="5" ry="3.5" fill="#FF6B95" opacity=".7"/>
+        <ellipse cx="48" cy="44" rx="5" ry="3.5" fill="#FF6B95" opacity=".7"/>
+        <ellipse cx="24" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+        <ellipse cx="40" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+        <circle cx="24.5" cy="35.2" r=".7" fill="#fff"/>
+        <circle cx="40.5" cy="35.2" r=".7" fill="#fff"/>
+        <path d="M21 32 L26 33" stroke="#1A1F2B" stroke-width="1" stroke-linecap="round"/>
+        <path d="M43 32 L38 33" stroke="#1A1F2B" stroke-width="1" stroke-linecap="round"/>
+        <path d="M30 42 L32 44 L34 42" fill="none" stroke="#FF6B95" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="32" y1="44" x2="32" y2="47" stroke="#FF6B95" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M30 47 Q32 49 34 47" fill="none" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tiny floating sparkles around envelope -->
+  <use href="#ci-spark" x="180" y="180" width="14" height="14" opacity=".8"/>
+  <use href="#ci-spark" x="620" y="180" width="12" height="12" opacity=".7"/>
+  <use href="#ci-spark" x="160" y="420" width="10" height="10" opacity=".6"/>
+  <use href="#ci-spark" x="640" y="420" width="10" height="10" opacity=".6"/>
+  <use href="#ci-spark" x="380" y="160" width="16" height="16" opacity=".85"/>
+</svg>

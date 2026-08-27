@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="grid-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0)"/>
+      <stop offset=".55" stop-color="rgba(255,255,255,.05)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,.12)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grid-fade)"/>
+  <!-- Horizontal lines (perspective: denser at top) -->
+  <g stroke="rgba(255,255,255,.12)" stroke-width="1" fill="none">
+    <line x1="0" y1="100" x2="1920" y2="100"/>
+    <line x1="0" y1="180" x2="1920" y2="180"/>
+    <line x1="0" y1="270" x2="1920" y2="270"/>
+    <line x1="0" y1="370" x2="1920" y2="370"/>
+    <line x1="0" y1="480" x2="1920" y2="480"/>
+    <line x1="0" y1="600" x2="1920" y2="600"/>
+    <line x1="0" y1="730" x2="1920" y2="730"/>
+    <line x1="0" y1="870" x2="1920" y2="870"/>
+    <line x1="0" y1="1020" x2="1920" y2="1020"/>
+  </g>
+  <!-- Vertical perspective rays from vanishing point at (960, 200) toward bottom -->
+  <g stroke="rgba(255,255,255,.1)" stroke-width="1" fill="none">
+    <line x1="960" y1="200" x2="-400" y2="1080"/>
+    <line x1="960" y1="200" x2="-100" y2="1080"/>
+    <line x1="960" y1="200" x2="200" y2="1080"/>
+    <line x1="960" y1="200" x2="500" y2="1080"/>
+    <line x1="960" y1="200" x2="800" y2="1080"/>
+    <line x1="960" y1="200" x2="960" y2="1080"/>
+    <line x1="960" y1="200" x2="1120" y2="1080"/>
+    <line x1="960" y1="200" x2="1420" y2="1080"/>
+    <line x1="960" y1="200" x2="1720" y2="1080"/>
+    <line x1="960" y1="200" x2="2020" y2="1080"/>
+    <line x1="960" y1="200" x2="2320" y2="1080"/>
+  </g>
+  <!-- Vanishing point dot -->
+  <circle cx="960" cy="200" r="2" fill="rgba(123,92,255,.6)"/>
+  <circle cx="960" cy="200" r="6" fill="rgba(123,92,255,.15)"/>
+</svg>

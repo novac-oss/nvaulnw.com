@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Bruno the Bear thumbs up">
+  <defs>
+    <radialGradient id="bear-face" cx=".4" cy=".4" r=".7">
+      <stop offset="0" stop-color="#C9926A"/>
+      <stop offset="1" stop-color="#8B5A2B"/>
+    </radialGradient>
+    <radialGradient id="bear-muzzle" cx=".5" cy=".5" r=".7">
+      <stop offset="0" stop-color="#F2D4B6"/>
+      <stop offset="1" stop-color="#D9A87A"/>
+    </radialGradient>
+  </defs>
+  <!-- Ears -->
+  <circle cx="13" cy="18" r="7" fill="#8B5A2B"/>
+  <circle cx="13" cy="18" r="3.5" fill="#C9926A"/>
+  <circle cx="51" cy="18" r="7" fill="#8B5A2B"/>
+  <circle cx="51" cy="18" r="3.5" fill="#C9926A"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="38" rx="22" ry="21" fill="url(#bear-face)"/>
+  <!-- Muzzle -->
+  <ellipse cx="32" cy="46" rx="13" ry="10" fill="url(#bear-muzzle)"/>
+  <!-- Eyes (determined, friendly) -->
+  <ellipse cx="24" cy="34" rx="2.4" ry="2.8" fill="#1A1F2B"/>
+  <ellipse cx="40" cy="34" rx="2.4" ry="2.8" fill="#1A1F2B"/>
+  <circle cx="24.7" cy="33.3" r=".7" fill="#fff"/>
+  <circle cx="40.7" cy="33.3" r=".7" fill="#fff"/>
+  <!-- Eyebrows -->
+  <path d="M19 28 Q24 26 28 29" fill="none" stroke="#5C3A1B" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M45 28 Q40 26 36 29" fill="none" stroke="#5C3A1B" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="42" rx="3" ry="2.2" fill="#1A1F2B"/>
+  <path d="M32 44 L32 48" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Confident smile -->
+  <path d="M25 48 Q32 53 39 48" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M30 49 L30 50" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Cheek blush -->
+  <ellipse cx="16" cy="44" rx="3.5" ry="2" fill="#FF8FA8" opacity=".4"/>
+  <ellipse cx="48" cy="44" rx="3.5" ry="2" fill="#FF8FA8" opacity=".4"/>
+  <!-- Thumbs up paw (top right) -->
+  <g transform="translate(50 6) rotate(15)">
+    <rect x="0" y="0" width="8" height="10" rx="3" fill="#8B5A2B"/>
+    <rect x="2" y="-4" width="4" height="6" rx="2" fill="#C9926A"/>
+  </g>
+  <!-- Spark -->
+  <path d="M5 12 L7 10 L9 12 L7 14 Z" fill="#FFB547"/>
+</svg>

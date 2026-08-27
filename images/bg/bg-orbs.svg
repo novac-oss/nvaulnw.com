@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="orb-blue" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4D8BFF" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#4D8BFF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#4D8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-violet" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7B5CFF" stop-opacity=".5"/>
+      <stop offset=".5" stop-color="#7B5CFF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#7B5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-mint" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#26E0C5" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#26E0C5" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#26E0C5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-amber" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFB547" stop-opacity=".32"/>
+      <stop offset=".5" stop-color="#FFB547" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#FFB547" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="orb-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="transparent"/>
+  <g filter="url(#orb-soft)">
+    <ellipse cx="360" cy="280" rx="520" ry="380" fill="url(#orb-blue)"/>
+    <ellipse cx="1480" cy="220" rx="560" ry="400" fill="url(#orb-violet)"/>
+    <ellipse cx="960" cy="900" rx="640" ry="420" fill="url(#orb-mint)"/>
+    <ellipse cx="1620" cy="820" rx="420" ry="320" fill="url(#orb-amber)"/>
+    <ellipse cx="220" cy="820" rx="360" ry="280" fill="url(#orb-violet)" opacity=".6"/>
+  </g>
+</svg>

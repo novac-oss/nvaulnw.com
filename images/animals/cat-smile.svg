@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Milo the Cat smiling">
+  <defs>
+    <radialGradient id="cat-face" cx=".4" cy=".4" r=".7">
+      <stop offset="0" stop-color="#F2E0C9"/>
+      <stop offset="1" stop-color="#C7A983"/>
+    </radialGradient>
+    <linearGradient id="cat-cheek" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9EBD" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FF9EBD" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Ears -->
+  <path d="M12 24 L8 8 L24 20 Z" fill="#C7A983"/>
+  <path d="M52 24 L56 8 L40 20 Z" fill="#C7A983"/>
+  <path d="M14 22 L13 14 L21 20 Z" fill="#FFB6C8"/>
+  <path d="M50 22 L51 14 L43 20 Z" fill="#FFB6C8"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="38" rx="22" ry="20" fill="url(#cat-face)"/>
+  <!-- Stripes -->
+  <path d="M16 30 Q18 27 20 30" fill="none" stroke="#8B6F4E" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+  <path d="M48 30 Q46 27 44 30" fill="none" stroke="#8B6F4E" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+  <!-- Cheeks -->
+  <ellipse cx="16" cy="44" rx="5" ry="3" fill="url(#cat-cheek)"/>
+  <ellipse cx="48" cy="44" rx="5" ry="3" fill="url(#cat-cheek)"/>
+  <!-- Eyes closed (smiling arcs) -->
+  <path d="M20 36 Q24 32 28 36" fill="none" stroke="#1A1F2B" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M36 36 Q40 32 44 36" fill="none" stroke="#1A1F2B" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M30 42 L32 40 L34 42 L32 44 Z" fill="#FF8FA8"/>
+  <!-- Mouth content smile -->
+  <path d="M26 46 Q32 51 38 46" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Whiskers -->
+  <line x1="6" y1="44" x2="18" y2="44" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+  <line x1="6" y1="48" x2="18" y2="46" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+  <line x1="58" y1="44" x2="46" y2="44" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+  <line x1="58" y1="48" x2="46" y2="46" stroke="#1A1F2B" stroke-width=".8" stroke-linecap="round" opacity=".5"/>
+  <!-- Heart accent -->
+  <path d="M52 12 c-1-2-4 0-2 2 c0 0 1 1 2 2 c1-1 2-2 2-2 c2-2-1-4-2-2 z" fill="#FF6B95" opacity=".85"/>
+</svg>

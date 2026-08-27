@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Pip the Bunny blushing">
+  <defs>
+    <radialGradient id="bunny-face" cx=".4" cy=".4" r=".7">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F0DAE0"/>
+    </radialGradient>
+    <linearGradient id="bunny-blush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6B95" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#FF6B95" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bunny-ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9E1"/>
+      <stop offset="1" stop-color="#FF9EBD"/>
+    </linearGradient>
+  </defs>
+  <!-- Long ears -->
+  <ellipse cx="22" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+  <ellipse cx="42" cy="14" rx="4" ry="11" fill="#F2E0E6"/>
+  <ellipse cx="22" cy="16" rx="2" ry="8" fill="url(#bunny-ear)"/>
+  <ellipse cx="42" cy="16" rx="2" ry="8" fill="url(#bunny-ear)"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="40" rx="21" ry="19" fill="url(#bunny-face)"/>
+  <!-- Blush cheeks -->
+  <ellipse cx="16" cy="44" rx="5" ry="3.5" fill="url(#bunny-blush)"/>
+  <ellipse cx="48" cy="44" rx="5" ry="3.5" fill="url(#bunny-blush)"/>
+  <!-- Eyes (small, shy) -->
+  <ellipse cx="24" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+  <ellipse cx="40" cy="36" rx="1.8" ry="2.4" fill="#1A1F2B"/>
+  <circle cx="24.5" cy="35.2" r=".7" fill="#fff"/>
+  <circle cx="40.5" cy="35.2" r=".7" fill="#fff"/>
+  <!-- Tiny shy eyebrows -->
+  <path d="M21 32 L26 33" stroke="#1A1F2B" stroke-width="1" stroke-linecap="round"/>
+  <path d="M43 32 L38 33" stroke="#1A1F2B" stroke-width="1" stroke-linecap="round"/>
+  <!-- Nose (Y shape) -->
+  <path d="M30 42 L32 44 L34 42" fill="none" stroke="#FF6B95" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="32" y1="44" x2="32" y2="47" stroke="#FF6B95" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Tiny mouth -->
+  <path d="M30 47 Q32 49 34 47" fill="none" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Whisker dots -->
+  <circle cx="20" cy="42" r=".6" fill="#1A1F2B" opacity=".5"/>
+  <circle cx="18" cy="44" r=".6" fill="#1A1F2B" opacity=".5"/>
+  <circle cx="44" cy="42" r=".6" fill="#1A1F2B" opacity=".5"/>
+  <circle cx="46" cy="44" r=".6" fill="#1A1F2B" opacity=".5"/>
+  <!-- Flower accent -->
+  <circle cx="56" cy="20" r="2" fill="#FFB547"/>
+  <circle cx="53" cy="18" r="1.5" fill="#FFB547"/>
+  <circle cx="53" cy="22" r="1.5" fill="#FFB547"/>
+  <circle cx="58" cy="22" r="1.5" fill="#FFB547"/>
+  <circle cx="58" cy="18" r="1.5" fill="#FFB547"/>
+  <circle cx="55.5" cy="20" r="1" fill="#FF8FA8"/>
+</svg>

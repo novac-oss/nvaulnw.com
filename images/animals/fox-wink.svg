@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Nora the Fox winking">
+  <defs>
+    <radialGradient id="fox-face" cx=".45" cy=".4" r=".7">
+      <stop offset="0" stop-color="#FFB989"/>
+      <stop offset="1" stop-color="#F08552"/>
+    </radialGradient>
+    <linearGradient id="fox-cheek" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8FA8" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#FF8FA8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Ears -->
+  <path d="M14 22 L8 6 L22 16 Z" fill="#E36A33"/>
+  <path d="M50 22 L56 6 L42 16 Z" fill="#E36A33"/>
+  <path d="M14 20 L11 11 L20 17 Z" fill="#FFCBA8"/>
+  <path d="M50 20 L53 11 L44 17 Z" fill="#FFCBA8"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="36" rx="22" ry="20" fill="url(#fox-face)"/>
+  <!-- White snout -->
+  <path d="M22 40 Q32 56 42 40 Q40 52 32 54 Q24 52 22 40 Z" fill="#FFF5EC"/>
+  <!-- Cheeks -->
+  <ellipse cx="18" cy="42" rx="5" ry="3" fill="url(#fox-cheek)"/>
+  <ellipse cx="46" cy="42" rx="5" ry="3" fill="url(#fox-cheek)"/>
+  <!-- Left eye open -->
+  <ellipse cx="24" cy="34" rx="2.6" ry="3.1" fill="#1A1F2B"/>
+  <circle cx="24.7" cy="33" r=".9" fill="#fff"/>
+  <!-- Right eye wink (arc) -->
+  <path d="M37.5 34 Q40.5 30.5 43.5 34" fill="none" stroke="#1A1F2B" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M30 42 Q32 40 34 42 Q32 45 30 42 Z" fill="#1A1F2B"/>
+  <!-- Smile -->
+  <path d="M27 47 Q32 51 37 47" fill="none" stroke="#1A1F2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M30 48 L30 50" stroke="#1A1F2B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Spark accent -->
+  <circle cx="55" cy="14" r="1.4" fill="#FFB547"/>
+  <circle cx="9" cy="50" r="1" fill="#26E0C5"/>
+</svg>

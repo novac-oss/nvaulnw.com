@@ -1,0 +1,12 @@
+# Build / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local-only / scratch
+.env
+.env.local
+*.tmp
+*.bak

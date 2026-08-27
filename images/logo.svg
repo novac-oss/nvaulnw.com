@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="N VaulNW studio">
+  <defs>
+    <linearGradient id="nvn-mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4D8BFF"/>
+      <stop offset=".5" stop-color="#5B73FF"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="nvn-mark-shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="nvn-spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26E0C5"/>
+      <stop offset="1" stop-color="#FFB547"/>
+    </linearGradient>
+    <style>
+      .nvn-word { fill: #E6EAF2; font-family: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 700; letter-spacing: 0.04em; }
+      .nvn-tag { fill: #8A93A6; font-family: "Inter", system-ui, -apple-system, sans-serif; font-weight: 500; letter-spacing: 0.32em; }
+      .nvn-mark-fill { fill: url(#nvn-mark); }
+      .nvn-mark-shade { fill: url(#nvn-mark-shade); }
+      .nvn-spark-fill { fill: url(#nvn-spark); }
+      /* Recoloring hook: parent .nvn-logo.recolor .nvn-word { fill: #yourcolor } */
+      .nvn-logo.recolor .nvn-word { fill: var(--nvn-ink, #E6EAF2); }
+      .nvn-logo.recolor .nvn-tag { fill: var(--nvn-ink-mute, #8A93A6); }
+    </style>
+  </defs>
+
+  <g class="nvn-logo">
+    <!-- Mark: two angular mountain peaks forming an N -->
+    <g transform="translate(0 6)">
+      <!-- Left tall peak -->
+      <path class="nvn-mark-fill" d="M10 62 L32 8 L44 62 Z"/>
+      <!-- Left peak inner shade for depth -->
+      <path class="nvn-mark-shade" d="M32 8 L44 62 L36 62 Z"/>
+      <!-- Right peak (shorter, offset) -->
+      <path class="nvn-mark-fill" d="M38 62 L58 22 L72 62 Z"/>
+      <path class="nvn-mark-shade" d="M58 22 L72 62 L64 62 Z"/>
+      <!-- Diagonal connector (the N's diagonal) -->
+      <path d="M30 16 L62 56" stroke="url(#nvn-mark)" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      <!-- Spark / star at the top of left peak -->
+      <g transform="translate(32 6)">
+        <path class="nvn-spark-fill" d="M0 -7 L1.6 -1.6 L7 0 L1.6 1.6 L0 7 L-1.6 1.6 L-7 0 L-1.6 -1.6 Z"/>
+        <circle r="1.6" fill="#FFFAE5" opacity=".9"/>
+      </g>
+      <!-- Tiny accent dot at right peak -->
+      <circle cx="58" cy="22" r="2" class="nvn-spark-fill"/>
+    </g>
+
+    <!-- Wordmark -->
+    <g transform="translate(96 0)">
+      <text x="0" y="46" class="nvn-word" font-size="28">N VaulNW</text>
+      <text x="2" y="64" class="nvn-tag" font-size="8.5">SOFTWARE&#160;&#160;STUDIO</text>
+      <!-- Subtle underline accent -->
+      <line x1="0" y1="70" x2="44" y2="70" stroke="url(#nvn-mark)" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

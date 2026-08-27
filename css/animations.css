@@ -1,0 +1,173 @@
+/* =========================================================
+   N VaulNW — animations.css
+   Keyframes + scroll/hover motion
+   ========================================================= */
+
+/* =================== Keyframes =================== */
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(38, 224, 197, .25); }
+  50% { box-shadow: 0 0 0 8px rgba(38, 224, 197, .05); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: .55; transform: scale(1); }
+  50% { opacity: .85; transform: scale(1.05); }
+}
+
+@keyframes orb-drift {
+  0% { transform: translate(0, 0) rotate(0); }
+  50% { transform: translate(-2%, 1%) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -30px) scale(1.2); }
+  66% { transform: translate(-30px, 40px) scale(.8); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes bounce-in {
+  0% { opacity: 0; transform: scale(.3) rotate(-12deg); }
+  60% { opacity: 1; transform: scale(1.12) rotate(6deg); }
+  80% { transform: scale(.96) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes tilt {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+/* =================== Reveal on scroll =================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s var(--ease-out), transform .9s var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside .reveal-stagger */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .8s var(--ease-out), transform .9s var(--ease-out);
+  will-change: opacity, transform;
+}
+.reveal-stagger.is-in > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-stagger.is-in > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.is-in > *:nth-child(2) { transition-delay: 70ms; }
+.reveal-stagger.is-in > *:nth-child(3) { transition-delay: 140ms; }
+.reveal-stagger.is-in > *:nth-child(4) { transition-delay: 210ms; }
+.reveal-stagger.is-in > *:nth-child(5) { transition-delay: 280ms; }
+.reveal-stagger.is-in > *:nth-child(6) { transition-delay: 350ms; }
+.reveal-stagger.is-in > *:nth-child(7) { transition-delay: 420ms; }
+.reveal-stagger.is-in > *:nth-child(8) { transition-delay: 490ms; }
+.reveal-stagger.is-in > *:nth-child(9) { transition-delay: 560ms; }
+.reveal-stagger.is-in > *:nth-child(n+10) { transition-delay: 600ms; }
+
+/* =================== Mascot pop-in =================== */
+.mascot-pop {
+  opacity: 0;
+  transform: scale(.4) rotate(-12deg);
+  transition: opacity .8s var(--ease-out), transform .9s var(--ease-out);
+}
+.mascot-pop.is-in {
+  opacity: 1;
+  animation: bounce-in .9s var(--ease-out) forwards;
+}
+
+/* =================== Stats counter =================== */
+.stat__value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* =================== Ambient =================== */
+.ambient-rotate {
+  animation: spin-slow 80s linear infinite;
+}
+
+/* =================== Hover / interaction refinements =================== */
+@media (prefers-reduced-motion: no-preference) {
+  .card,
+  .format-card,
+  .faq,
+  .step,
+  .stat,
+  .quote,
+  .service,
+  .chip,
+  .contact-card {
+    transition-property: transform, box-shadow, border-color, background, color;
+  }
+}
+
+/* Hero subtle gradient shimmer on headline */
+.hero h1 .accent {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: shimmer 6s linear infinite;
+}
+
+/* =================== Reduced motion =================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-stagger > *,
+  .mascot-pop {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .bg-layer--orbs img,
+  .hero__mascots .hero__mascot,
+  .hero__visual img.illust,
+  .cta-band__art img,
+  .mascot--float,
+  .mascot--float-slow,
+  .mascot--float-fast,
+  .particle {
+    animation: none !important;
+  }
+}
